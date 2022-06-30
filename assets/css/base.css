@@ -5,6 +5,7 @@
     --text-color: #333;
     --border-color: #dbdbdb;
     --background-color-hover: #f1f1f1;
+    --background-color-hover-primary: #ee5f43;
     --color-rating: #ffce3d;
 
     --header-height: 120px;
@@ -226,5 +227,50 @@ html {
 }
 
 .select-input__item:hover {
+    color: var(--primary-color);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.pagination-item {
+    margin: 0 15px;
+}
+.pagination-item--active a {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.pagination-item--active a:hover {
+    color: var(--white-color);
+    background-color: var(--background-color-hover-primary);
+}
+.pagination-item:first-child {
+    margin-left: 0;
+    background-color: transparent;
+}
+.pagination-item:last-child {
+    margin-right: 0;
+    background-color: transparent;
+}
+.pagination-item__icon {
+}
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    min-width: 40px;
+    height: var(--height);
+    font-size: 2rem;
+    line-height: var(--height);
+    text-align: center;
+    color: rgb(102 102 102 / 87%);
+    border-radius: 2px;
+}
+
+.pagination-item__link:hover {
     color: var(--primary-color);
 }

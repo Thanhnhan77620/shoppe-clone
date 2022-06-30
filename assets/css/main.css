@@ -534,7 +534,7 @@
 }
 
 .header__search-btn:hover {
-    background-color: #ee5f43;
+    background-color: var(-background-color-hover-primary);
     cursor: pointer;
 }
 
@@ -1024,7 +1024,7 @@
 }
 /* Product item */
 .product-container-wrapper {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .product-item {
     display: block;
@@ -1190,4 +1190,9 @@ i.product-item__like-icon-fill {
 }
 .product-item__sale-off-label {
     color: var(--white-color);
+}
+
+/* Pagination */
+.pagination-wrapper {
+    margin: 40px 0 40px 0;
 }
