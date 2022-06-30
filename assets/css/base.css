@@ -264,7 +264,7 @@ html {
     text-decoration: none;
     min-width: 40px;
     height: var(--height);
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: var(--height);
     text-align: center;
     color: rgb(102 102 102 / 87%);
