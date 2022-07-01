@@ -295,9 +295,15 @@
 
 .header__notify-name {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    height: 1.7rem;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .header__notify-description {
@@ -306,6 +312,10 @@
     line-height: 1.6rem;
     color: rgb(130 124 124);
     margin-top: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 /* Footer notify*/
@@ -727,7 +737,7 @@
 }
 .header__cart-item {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .header__cart-item:hover {
@@ -736,8 +746,8 @@
 }
 
 .header__cart-img {
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     margin: 8px 12px;
     border: 1px solid var(--border-color);
 }
@@ -746,9 +756,10 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-right: 12px;
-    height: 55px;
+    justify-content: flex-start;
+    margin: 8px 12px 0 0;
+    /* margin-right: 12px; */
+    /* height: 55px; */
 }
 
 .header__cart-item-head {
@@ -767,7 +778,7 @@
     padding-right: 8px;
     text-align: left;
     overflow: hidden;
-    height: 3.2rem;
+    /* height: 3.2rem; */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -799,6 +810,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 4px;
 }
 
 .header__cart-item-description {
@@ -928,11 +940,11 @@
 .category-item {
     padding: 8px 0;
     font-size: 1.6rem;
-    font-weight: 500;
 }
 
 .category-item--active .category-item__link {
     color: var(--primary-color);
+    font-weight: bold;
 }
 
 .category-item--active .category-item__link::before {
@@ -1261,6 +1273,7 @@ i.product-item__like-icon-fill {
     padding: 40px 0;
     font-size: 1.4rem;
     line-height: 1.6rem;
+    font-weight: 400;
     color: #666;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
